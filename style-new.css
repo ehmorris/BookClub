@@ -1,10 +1,47 @@
+.animation-title-slide-up, .titleInfo {
+  -webkit-animation: title-slide-up 1s ease-out;
+  -moz-animation: title-slide-up 1s ease-out;
+  -ms-animation: title-slide-up 1s ease-out;
+  -o-animation: title-slide-up 1s ease-out;
+  animation: title-slide-up 1s ease-out; }
+
+@-webkit-keyframes title-slide-up {
+  0% {
+    top: 700px; }
+
+  20% {
+    top: 700px; }
+
+  100% {
+    top: 0; } }
+
+@-moz-keyframes title-slide-up {
+  0% {
+    top: 700px; }
+
+  20% {
+    top: 700px; }
+
+  100% {
+    top: 0; } }
+
+@keyframes title-slide-up {
+  0% {
+    top: 700px; }
+
+  20% {
+    top: 700px; }
+
+  100% {
+    top: 0; } }
+
 body {
   font-family: "ff-meta-serif-web-pro", Georgia, Times, Serif;
   font-weight: 500;
   font-style: normal; }
 
 h1, h2, h3, h4 {
-  font-family: "franklin-gothic-ext-comp-urw", Impact, Tahoma, Trebuchet, "Lucida Sans", Sans-serif;
+  font-family: "franklin-gothic-ext-comp-urw", "LeagueGothicRegular", Tahoma, Verdana, sans-serif;
   font-weight: 700; }
 
 .chapterHeading {
@@ -38,7 +75,7 @@ article .articleFlow p:nth-child(2) {
   text-indent: 0; }
 
 section.titlePage h1 {
-  font-family: "franklin-gothic-ext-comp-urw", Impact, Tahoma, Trebuchet, "Lucida Sans", Sans-serif;
+  font-family: "franklin-gothic-ext-comp-urw", "LeagueGothicRegular", Tahoma, Verdana, sans-serif;
   font-weight: 700;
   font-size: 1000%;
   -letter-kern: -3px 2px 2px 0;

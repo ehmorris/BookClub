@@ -13,9 +13,7 @@
 
     // preloader
     $(window).bind("load", function() {
-        $("#preloader").fadeOut(1000,function(){
-            $(this).remove();
-        });
+        $("#preloader").hide();
     });
 
     // nice easing

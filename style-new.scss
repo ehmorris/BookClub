@@ -1,3 +1,5 @@
+@import 'bourbon/bourbon';
+
 // fonts available:
 //
 // Franklin Gothic light, book, book italic, demi, heavy, and heavy italic
@@ -29,7 +31,7 @@
 
 $font-main: "franklin-gothic-urw", Helvetica, Arial, Sans-serif;
 $font-small-caps: "franklin-gothic-urw-con-sc", Helvetica, Arial, Sans-serif;
-$font-condensed:  "franklin-gothic-ext-comp-urw", Impact, Tahoma, Trebuchet, "Lucida Sans",Sans-serif;
+$font-condensed:  "franklin-gothic-ext-comp-urw", "LeagueGothicRegular", Tahoma, Verdana, sans-serif;
 $font-alt: "ff-meta-serif-web-pro", Georgia, Times, Serif;
 $font-alt-sc: "ff-meta-serif-sc-web-pro", Georgia, Times, Serif;
 $font-special: "adobe-text-pro", Georgia, Times, Serif;
@@ -80,6 +82,28 @@ $font-special: "adobe-text-pro", Georgia, Times, Serif;
   font-style: italic;
 }
 
+// animations
+
+.animation-title-slide-up {
+  @include animation(title-slide-up 1s ease-out);
+}
+
+@mixin title-slide-up {
+  0% {
+    top: 700px;
+  }
+  20% {
+    top: 700px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@-webkit-keyframes title-slide-up  { @include title-slide-up }
+   @-moz-keyframes title-slide-up  { @include title-slide-up }
+        @keyframes title-slide-up  { @include title-slide-up }
+
 // styles
 
 body {
@@ -119,6 +143,10 @@ header .title {
 
 article .articleFlow p:nth-child(2) {
   text-indent: 0;
+}
+
+.titleInfo {
+  @extend .animation-title-slide-up;
 }
 
 section.titlePage {
