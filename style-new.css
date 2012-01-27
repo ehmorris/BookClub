@@ -1,0 +1,66 @@
+body {
+  font-family: "ff-meta-serif-web-pro", Georgia, Times, Serif;
+  font-weight: 500;
+  font-style: normal; }
+
+h1, h2, h3, h4 {
+  font-family: "franklin-gothic-ext-comp-urw", Impact, Tahoma, Trebuchet, "Lucida Sans", Sans-serif;
+  font-weight: 700; }
+
+.chapterHeading {
+  margin-bottom: 2em;
+  padding: 0; }
+  .chapterHeading h2 {
+    font-size: 300%;
+    font-family: "ff-meta-serif-sc-web-pro", Georgia, Times, Serif;
+    font-weight: 500;
+    text-transform: lowercase;
+    line-height: 1em;
+    text-align: left;
+    -letter-kern: -2px; }
+
+header .title {
+  font-family: "ff-meta-serif-sc-web-pro", Georgia, Times, Serif;
+  font-weight: 500;
+  text-transform: lowercase;
+  font-style: normal; }
+
+.pageCount {
+  font-family: "ff-meta-serif-sc-web-pro", Georgia, Times, Serif;
+  font-weight: 500;
+  text-transform: lowercase; }
+  .pageCount .of {
+    font-family: "adobe-text-pro", Georgia, Times, Serif;
+    font-weight: 400;
+    font-style: italic; }
+
+article .articleFlow p:nth-child(2) {
+  text-indent: 0; }
+
+section.titlePage h1 {
+  font-family: "franklin-gothic-ext-comp-urw", Impact, Tahoma, Trebuchet, "Lucida Sans", Sans-serif;
+  font-weight: 700;
+  font-size: 1000%;
+  -letter-kern: -3px 2px 2px 0;
+  letter-spacing: 0;
+  line-height: .6em;
+  position: relative;
+  text-indent: 0;
+  z-index: 1; }
+section.titlePage .author {
+  background: rgba(0, 0, 0, 0.35);
+  display: inline-block;
+  font-family: "adobe-text-pro", Georgia, Times, Serif;
+  font-weight: 400;
+  font-style: italic;
+  padding: 0 2em; }
+  section.titlePage .author a {
+    font-family: "ff-meta-serif-sc-web-pro", Georgia, Times, Serif;
+    font-weight: 500;
+    text-transform: lowercase;
+    font-style: normal; }
+
+.footer .about p:last-child {
+  font-family: "adobe-text-pro", Georgia, Times, Serif;
+  font-weight: 400;
+  font-style: italic; }

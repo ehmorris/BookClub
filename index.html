@@ -4,7 +4,8 @@
 
     <title>Book Club</title>
 
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style-new.css" type="text/css" media="screen" />
     <link rel="icon" type="image/x-icon" href="favicon.png">
 
     <!-- script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js" type="text/javascript" charset="utf-8"></script -->
@@ -15,68 +16,72 @@
         var bookScript = location.hash.indexOf('book2') !== -1 ? 'book2' : 'book';
         document.write('<script src="js/' + bookScript + '.js" charset="utf-8"></' + 'script>');
     </script>
+    <script type="text/javascript" src="http://use.typekit.com/nkr1sjy.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 
 <body>
 
-    <div id="preloader"></div>
+  <div id="preloader"></div>
 
-    <aside class="sans">
-        <a href="#">BookClub</a>
-    </aside>
+  <aside class="sans">
+    <a href="#">BookClub</a>
+  </aside>
 
-    <nav>
-        <ul>
-            <li><a href="javascript:void(0);" class="prev">&uarr;</a></li>
-            <li><a href="javascript:void(0);" class="next">&darr;</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="javascript:void(0);" class="prev">&uarr;</a></li>
+      <li><a href="javascript:void(0);" class="next">&darr;</a></li>
+    </ul>
+  </nav>
 
-    <section class="titlePage">
-        <div class="wrapper">
-            <div class="titleInfo">
-                <h1 class="titleText">Guts</h1>
-                <div class="author">by <a href="#" title="link to profile">Chuck Palahniuk</a></div>
-            </div>
-        </div>
+  <section class="titlePage">
+    <div class="wrapper">
+      <div class="titleInfo">
+        <h1 class="titleText">Guts</h1>
+        <div class="author">by <a href="#" title="link to profile">Chuck Palahniuk</a></div>
+      </div>
+    </div>
+  </section>
+
+  <hr />
+
+
+  <script id="template" type="text/template">
+    <section class="page {pageClasses}">
+      <div class="wrapper">
+        <header class="clearfix">
+          <div class="title">{title} <span class="chapter">{chapter}</span></div>
+          <div class="pageCount">
+            <span class="author"><a href="#">{author}</a></span>
+            page <span class="pageNumber">{pageNumber}</span> <span class="of">of</span> <span class="totalPages">{totalNumber}</span>
+          </div>
+        </header>
+        <article class="scrollWidth">
+          <div class="articleFlow" style="left: {offset}px">
+            {content}
+          </div>
+        </article>
+      </div>
     </section>
 
-    <hr>
+    <hr />
+  </script>
 
 
-    <script id="template" type="text/template">
-        <section class="page {pageClasses}">
-            <div class="wrapper">
-                <header class="clearfix">
-                    <div class="title">{title} <span class="chapter">{chapter}</span></div>
-                    <div class="pageCount">
-                        <span class="author"><a href="#">{author}</a></span>
-                        page <span class="pageNumber">{pageNumber}</span> of <span class="totalPages">{totalNumber}</span>
-                    </div>
-                </header>
-                <article class="scrollWidth">
-                    <div class="articleFlow" style="left: {offset}px">
-                        {content}
-                    </div>
-                </article>
-            </div>
-        </section>
+  <section class="footer">
+    <div class="wrapper">
+      <div class="footerInfo">
+        <div class="about">
+          <p><em><a href="http://chuckpalahniuk.net/features/shorts/guts">Guts</a></em> is a short story written by <a href="http://chuckpalahniuk.net/">Chuck Palahniuk</a>. <em><a href="https://github.com/andychung/BookClub">BookClub</a></em> is an experiment in long form reading and typography in the browser by <a href="http://andychung.ca">Andy Chung</a> with the imperative help of <a href="http://tagneto.blogspot.com">James Burke</a>.</p>
 
-        <hr>
-    </script>
-
-
-    <section class="footer">
-        <div class="wrapper">
-            <div class="footerInfo">
-                <div class="about">
-                    <p><em><a href="http://chuckpalahniuk.net/features/shorts/guts">Guts</a></em> is a short story written by <a href="http://chuckpalahniuk.net/">Chuck Palahniuk</a>. <em><a href="https://github.com/andychung/BookClub">BookClub</a></em> is an experiment in long form reading and typography in the browser by <a href="http://andychung.ca">Andy Chung</a> with the imperative help of <a href="http://tagneto.blogspot.com">James Burke</a>.</p>
-
-                    <p>Cover image by <a href="http://en.wikipedia.org/wiki/David_Hockney">David Hockney</a>.</p>
-                </div>
-            </div>
+          <p>Cover image by <a href="http://en.wikipedia.org/wiki/David_Hockney">David Hockney</a>.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/kerning.min.js" type="text/javascript" charset="utf-8"></script>
 
 </body>
 </html>
